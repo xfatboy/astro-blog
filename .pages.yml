@@ -28,3 +28,12 @@ content:
       - { name: layout, type: string, hidden: true, default: "../layouts/AboutLayout.astro" }
       - { name: title, label: Title, type: string }
       - { name: body, label: Body, type: rich-text, options: { input: public/assets, output: /assets } }
+  - name: locations
+    label: Location Pages
+    type: collection
+    path: src/content/locations
+    view:
+      fields: [ title ]
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: body, label: Body, type: rich-text }
